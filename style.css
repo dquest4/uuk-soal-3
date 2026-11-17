@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #d1e7dd;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+section.produk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0 auto 40px auto;
+    max-width: 900px;
+}
+
+article.produk {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+article.produk img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+article.produk h3 {
+    margin: 0 0 5px 0;
+}
+
+article.produk p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#formPesan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto; 
+}
+
+#formPesan h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#formPesan label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#formPesan input:not([type="radio"]), 
+#formPesan select, 
+#formPesan textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formPesan input[type="radio"] {
+    margin-right: 5px;
+}
+
+#formPesan input[type="radio"] + label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+footer {
+    text-align: center;
+    background-color: #d1e7dd;
+    padding: 15px;
+    margin-top: 40px;
+}

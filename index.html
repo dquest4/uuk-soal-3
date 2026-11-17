@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Pemesanan Toko Online</h1>
+    </header>
+
+    <section class="produk">
+        <article class="produk">
+            <img src="buku.jpg">
+            <h3>Buku Tulis</h3>
+            <p>Rp 5.000</p>
+        </article>
+
+        <article class="produk">
+            <img src="pulpen.jpg">
+            <h3>Pulpen</h3>
+            <p>Rp 4.000</p>
+        </article>
+
+        <article class="produk">
+            <img src="penghapus.jpg">
+            <h3>Penghapus</h3>
+            <p>Rp 2.000</p>
+        </article>
+    </section>
+
+    <form id="formPesan" action="#" method="get">
+        <h2>FORM PEMESANAN</h2>
+        
+        <label for="nama">Nama Pemesan:</label>
+        <input type="text" id="nama" name="nama" required minlength="3" maxlength="50" pattern="[a-zA-Z/s]+ required">
+
+        <label for="hp">Nomor HP:</label>
+        <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" title="Isi 10 sampai 13 angka">
+
+        <label for="produk">Produk:</label>
+        <select id="produk" name="produk" required>
+            <option value=""> Pilih </option>
+            <option value="buku">Buku Tulis</option>
+            <option value="pulpen">Pulpen</option>
+            <option value="penghapus">Penghapus</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" required min="10" max="13">
+
+        <label>Metode Bayar:</label>
+        <input type="radio" id="transfer" name="bayar" value="transfer" required>
+        <label for="transfer">Transfer</label>
+        <input type="radio" id="cod" name="bayar" value="cod" required>
+        <label for="cod">COD</label>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required minlength="10" maxlength="200"></textarea>
+
+        <button type="submit">Pesan</button>
+    </form>
+    <footer>
+        <p>@nama toko</p>
+    </footer>
+</body>
+</html>
